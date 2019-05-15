@@ -3,7 +3,7 @@ const app = express()
 const bodyParser = require('body-parser')
 
 const cors = require('cors')
-
+require('dotenv').config({path: '.env'});
 const mongoose = require('mongoose')
 mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true})
 
